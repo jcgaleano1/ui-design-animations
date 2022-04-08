@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.card{
+    width: 360px;
+    height: 360px;
+    background: #000;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    margin: 10% auto;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(9% 0, 100% 0%, 89% 100%, 0% 100%);
+}
+.card span{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: url(img/bike.jpg);
+    transition: .7s;
+}
+
+.card span:nth-child(1){
+    z-index: 40;
+    width: 25%;
+    transition-delay: 0;
+}
+.card span:nth-child(2){
+    z-index: 30;
+    width: 50%;
+    transition-delay: 0.3s;
+}
+.card span:nth-child(3){
+    z-index: 20;
+    width: 75%;
+    transition-delay: 0.6s;
+}
+.card span:nth-child(4){
+    z-index:10;
+    width: 100%;
+    transition-delay: 0.9s;
+}
+
+.card:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.card:hover span:nth-child(1){
+    transition-delay: .8s;
+}
+.card:hover span:nth-child(2){
+    transition-delay: .6s;
+}
+.card:hover span:nth-child(3){
+    transition-delay: .3s;
+}
+.card:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+
+.content{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 80px 20px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 2s;
+}
+.content p{
+    color: grey;
+    padding: 17px;
+}
+.content a{
+    width: 130px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid white;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.content a:hover{
+    background: white;
+    color: black;
+    transition: .5s;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.card:hover .content{
+    transform: translateY(0%);
+}
+

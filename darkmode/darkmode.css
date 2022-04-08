@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+input[type="checkbox"]{
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  right: 100px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type="checkbox"]:before{
+    position: absolute;
+    content: 'Dark';
+    color: white;
+    background: black;
+    padding: 10px 20px;
+}
+input[type="checkbox"]:checked:before{
+    content: 'Light';
+    color: black;
+    background: white;
+}
+input[type="checkbox"]:checked ~ *{/* Selección de todo el archivo */
+    /* filter: invert(1) hue-rotate(180deg) */
+    color: white;
+    background: black;
+}
+
+.section, section{
+    
+    background: #fff;
+    min-height: 100vh; 
+    padding: 80px 100px;
+}
+.section h2{
+    color: rgb(206, 79, 206);
+}
+
+.section img, section img{
+    max-width: 500px;
+    float: left;
+    margin: 10px 20px 10px 0;
+    filter: inherit;
+}
+button{
+    background: red;
+    color: white;
+}

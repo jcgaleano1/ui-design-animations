@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(204, 221, 228);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card{
+   background-color: rgb(0, 255, 242);
+   padding: 1em;
+   width: 250px;
+   border-radius: 10px; 
+   /* clip-path: circle(10% at 90% 20%);  CIRCLE ANIMATION*/  
+   clip-path: inset(0% 0% 0% 85%);
+   cursor: pointer;
+   transition: all .7s ease-in-out;
+}
+
+.container:hover .card{
+    clip-path: inset(0% 0% 0% 0%);
+}
+/* .card:hover{
+    clip-path: circle(75%);
+    background-color: rgb(0, 195, 255);;
+  }  CIRCLE ANIMATION*/
+
+  /* .card span{
+      float: right;
+      color: white;
+      font-weight: bold;
+      transition: opacity .5s;
+      position: relative;
+      margin-right: 4%;
+  } circle animation*/
+
+  /* .card:hover span{
+     opacity: 0;
+  } CIRCLE ANIMATION*/
+
+.card h1{
+    color: white;
+    margin: 0;
+}
+.card p{
+    color: white;
+    font-size: .8rem;
+}
+.card span{
+    float: right;
+    margin-top: 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: opacity .5s;
+    position: relative;
+}
+.card:hover span{
+    opacity: 0;
+ }

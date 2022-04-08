@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./background_size_scroll.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Background size</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <section>
+        <h2>Background size change into a Small when scrolling</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio sapiente molestias expedita ducimus quis
+            odit aut minima explicabo illum, provident fuga asperiores! Et corporis, temporibus voluptates perferendis
+            ratione explicabo amet impedit fugit porro? Distinctio nisi dolorem incidunt provident odio quis vero
+            repellendus voluptatem fugit. Impedit eos sunt accusantium ducimus voluptatem. <br><br>Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Temporibus doloribus enim explicabo debitis molestias ea quo deleniti.
+            Quis ratione veritatis quidem sequi fugit, mollitia autem nostrum ad ducimus. Placeat hic quis illo minus
+            ullam! Fuga, sapiente assumenda odio sequi voluptatem voluptas sunt rerum iure quo libero, accusamus animi
+            accusantium. Itaque!<br><br>Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Temporibus doloribus enim explicabo debitis molestias ea quo deleniti.
+            Quis ratione veritatis quidem sequi fugit, mollitia autem nostrum ad ducimus. Placeat hic quis illo minus
+            ullam! Fuga, sapiente assumenda odio sequi voluptatem voluptas sunt rerum iure quo libero, accusamus animi
+            accusantium. Itaque!<br><br>Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Temporibus doloribus enim explicabo debitis molestias ea quo deleniti.
+            Quis ratione veritatis quidem sequi fugit, mollitia autem nostrum ad ducimus. Placeat hic quis illo minus
+            ullam! Fuga, sapiente assumenda odio sequi voluptatem voluptas sunt rerum iure quo libero, accusamus animi
+            accusantium. Itaque!<br><br>Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Temporibus doloribus enim explicabo debitis molestias ea quo deleniti.
+            Quis ratione veritatis quidem sequi fugit, mollitia autem nostrum ad ducimus. Placeat hic quis illo minus
+            ullam! Fuga, sapiente assumenda odio sequi voluptatem voluptas sunt rerum iure quo libero, accusamus animi
+            accusantium. Itaque!<br><br>Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Temporibus doloribus enim explicabo debitis molestias ea quo deleniti.
+            Quis ratione veritatis quidem sequi fugit, mollitia autem nostrum ad ducimus. Placeat hic quis illo minus
+            ullam! Fuga, sapiente assumenda odio sequi voluptatem voluptas sunt rerum iure quo libero, accusamus animi
+            accusantium. Itaque!</p>
+    </section>
+    <script type="text/javascript">
+    const bg = document.getElementById('header');
+    window.addEventListener('scroll',function(){
+       bg.style.backgroundSize = 160 - +window.pageYOffset/10+'%';
+       bg.style.opacity = 1 - +window.pageYOffset/700+'';
+    })
+    </script>
+
+</body>
+
+</html>

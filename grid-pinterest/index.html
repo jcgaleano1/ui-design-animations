@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <img class="grid-item" src="http://picsum.photos/230/500.jpg" alt="" width="230" height="250">
+        <img class="grid-item" src="http://picsum.photos/230/900.jpg" alt="" width="230" height="600">
+        <img class="grid-item" src="http://picsum.photos/230/600.jpg" alt="" width="230" height="500">
+        <img class="grid-item" src="http://picsum.photos/230/900.jpg" alt="" width="230" height="900">
+        <img class="grid-item" src="http://picsum.photos/230/900.jpg" alt="" width="230" height="400">
+        <img class="grid-item" src="http://picsum.photos/230/800.jpg" alt="" width="230" height="320">
+        <img class="grid-item" src="http://picsum.photos/230/910.jpg" alt="" width="230" height="450">
+        <img class="grid-item" src="http://picsum.photos/230/900.jpg" alt="" width="230" height="870">
+        <img class="grid-item" src="http://picsum.photos/230/810.jpg" alt="" width="230" height="450">
+        <img class="grid-item" src="http://picsum.photos/230/910.jpg" alt="" width="230" height="760">
+        <img class="grid-item" src="http://picsum.photos/230/900.jpg" alt="" width="230" height="940">
+        <img class="grid-item" src="http://picsum.photos/230/510.jpg" alt="" width="230" height="830">
+        <img class="grid-item" src="http://picsum.photos/230/500.jpg" alt="" width="230" height="790">
+        <img class="grid-item" src="http://picsum.photos/230/500.jpg" alt="" width="230" height="910">
+        <img class="grid-item" src="http://picsum.photos/230/500.jpg" alt="" width="230" height="650">
+        <img class="grid-item" src="http://picsum.photos/230/500.jpg" alt="" width="230" height="740">
+        <img class="grid-item" src="http://picsum.photos/230/500.jpg" alt="" width="230" height="830">
+        <img class="grid-item" src="http://picsum.photos/230/500.jpg" alt="" width="230" height="920">
+        <img class="grid-item" src="http://picsum.photos/230/500.jpg" alt="" width="230" height="850">
+        <img class="grid-item" src="http://picsum.photos/230/500.jpg" alt="" width="230" height="670">
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script>
+        var elem = document.querySelector('.grid-container');
+        var msnry = new Masonry(elem, {
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 230,
+            gutter: 20,
+            isFitWidth: true,
+        });
+    </script>
+</body>
+
+</html>
